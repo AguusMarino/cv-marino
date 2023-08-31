@@ -1,10 +1,86 @@
 @charset "utf-8";
 /* CSS Document */
+*{margin-left:px; box-sizing: border-box; max-width: 2200px; }
+body {
+  margin: 20%; margin-top: 0px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container1 {background-color:#BEABD0; width: 500px; height: 1860px;}
+.columna {padding: 80px;}
+.derecha {  width: 1600px;
+			height: 350px;
+            background-color: #805CA5;
+			margin-left: 500px;
+			margin-top: -1860px
+          }
+.contacto h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 30px;margin-bottom: 30px;padding-left: 140px}
+.contacto {display:flex;}
+.svg {
+	padding-top:80px; 
+	margin-left: -230px;
+	list-style: none}
 
-h1 {color: blueviolet;
-	font-family: Poppins}
-.experiencia {font-family: Poppins}
-.fines {font-family: "Montserrat Medium"; font-style: italic;font-size: 14px}
-.casa  {font-family: "Montserrat Medium"; font-style: italic;font-size: 14px}
-.cv {font-family: Poppins}
+.botonera {
+  list-style: none;
+  padding-top: 60px;
+  margin: 0;
+	margin-left: -40px;
+}
+
+.botonera li {
+  margin-top: 26px;
+margin-bottom: -12px;
+  padding : 10px;
+}
+
+.botonera a {
+  text-decoration: none;
+  display: flex;
+	justify-content:space-around;
+	align-items:center;
+  background-color: #805CA5;
+  color: white;
+	font-family: Poppins, Montserrat, "sans-serif";
+  border-radius: 4px;
+  margin-bottom: -30px;
+	width: 150px;
+	height: 60px;}
+	
+.intereses {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20px;padding-left: 140px;
+padding-top: 60px}
+.intereses ul {font-size: 25px;padding-top: 20px;padding-left: 45px}
+.idiomas h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20pt;padding-left: 150px;margin-top: 70px}
+.idiomas ul {font-family: Poppins, Montserrat, "sans-serif";; font-size: 25px;margin-top: 30px;padding-left: 175px}
+.informatica h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20pt;padding-left: 130px;margin-top: 70px}
+.informatica ul {font-family: Poppins, Montserrat, "sans-serif";; font-size: 25px;margin-top: 30px;padding-left: 145px}
+.derecha h1 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 40pt;padding-left: 100px}
+.derecha h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 25pt;padding-left: 100px}
+.perfil {padding-left: 100px;padding-top: 105px;font-family: Poppins, Montserrat, "sans-serif"}
+.perfil h3 {font-size: 25pt;}
+.perfil p {margin-top: -20px;width: 800px;text-align:justify;font-size: 16pt}
+.experiencia h2 {font-size: 25pt;padding-top: 50px;margin-left:10px;padding-left:90px; margin: 0; padding-bottom: 2px; border-bottom:8px solid #BEABD0}
+.trabajos h3 {padding-left: 100px;padding-top:30px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt;}
+.trabajos ul {padding-left: 150px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt}
+.fines {padding-left: 130px;padding-top:0px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 12pt;font-style: italic }
+.casa {padding-left: 130px;padding-top:0px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 12pt;font-style: italic}
+.formacion h2 { font-size: 25pt;padding-top: 60px;margin-left:10px;padding-left:90px; margin: 0; padding-bottom: 2px; border-bottom:8px solid #BEABD0}
+.estudios h3 {padding-left: 100px;padding-top:30px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt;}
+.estudios p {padding-left: 100px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 16pt;font-style: italic }
+.cabezal h2 {margin-top: -40px}
+.cabezal {color:white}
+
+footer {background-color: #000;
+	width: 2100px;
+	height: 100px;
+    color: #fff;
+    text-align:center;
+	padding: 40px;
+	margin-top: 1500px}
+
+
+
 	
