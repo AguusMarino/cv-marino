@@ -1,86 +1,137 @@
 @charset "utf-8";
 /* CSS Document */
-*{margin-left:px; box-sizing: border-box; max-width: 2200px; }
-body {
-  margin: 20%; margin-top: 0px;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;700&family=Roboto+Mono:wght@300;400&display=swap');
+* {
+	margin: 0;
+	box-sizing: border-box;
 }
-.container1 {background-color:#BEABD0; width: 500px; height: 1860px;}
-.columna {padding: 80px;}
-.derecha {  width: 1600px;
-			height: 350px;
-            background-color: #805CA5;
-			margin-left: 500px;
-			margin-top: -1860px
-          }
-.contacto h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 30px;margin-bottom: 30px;padding-left: 140px}
-.contacto {display:flex;}
+
+
+header {    background-color: #805CA5;
+     width: 100%; 
+    font-family: Poppins, Montserrat, "sans-serif";
+    font-weight: bold;
+    color: black;
+    display: flex;
+	align-items: center;
+	flex-flow: row;}
+
+.menu { display: flex;
+	list-style-type: none;}
+ 
+
+.menu li a {
+ text-decoration: none;
+ color: #fff;
+ font-size: 16px;
+}
+
+.menu li a:hover {
+ color: #ccc;
+}
+
+main {display: flex;}
+
+aside {background-color:#BEABD0;
+	width: 50%;}
+
+.foto {display: flex;
+	width: 20%;
+	height: 25%;
+}
+
+.contacto h2 {font-family: Poppins, Montserrat, "sans-serif";
+	font-size: 1.5em;
+	margin-left: 30%;
+	margin-top: 10%;}
+
+.botones-izquierda{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
 .svg {
-	padding-top:80px; 
-	margin-left: -230px;
-	list-style: none}
+	list-style: none;
+	padding-top: 5%;
+}
 
 .botonera {
-  list-style: none;
-  padding-top: 60px;
-  margin: 0;
-	margin-left: -40px;
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
 }
 
 .botonera li {
-  margin-top: 26px;
-margin-bottom: -12px;
-  padding : 10px;
+	padding :0.7%;
+	/*margin-left: 40%;*/
 }
 
 .botonera a {
-  text-decoration: none;
-  display: flex;
+	text-decoration: none;
+	display: flex;  
 	justify-content:space-around;
 	align-items:center;
-  background-color: #805CA5;
-  color: white;
+	background-color: #805CA5;
+	color:black;
+	font-family:Poppins, Montserrat, "sans-serif";
+	border-radius:4px;
+	width:10em;
+	height:2em
+}
+
+.intereses {
 	font-family: Poppins, Montserrat, "sans-serif";
-  border-radius: 4px;
-  margin-bottom: -30px;
-	width: 150px;
-	height: 60px;}
-	
-.intereses {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20px;padding-left: 140px;
-padding-top: 60px}
-.intereses ul {font-size: 25px;padding-top: 20px;padding-left: 45px}
-.idiomas h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20pt;padding-left: 150px;margin-top: 70px}
-.idiomas ul {font-family: Poppins, Montserrat, "sans-serif";; font-size: 25px;margin-top: 30px;padding-left: 175px}
-.informatica h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 20pt;padding-left: 130px;margin-top: 70px}
-.informatica ul {font-family: Poppins, Montserrat, "sans-serif";; font-size: 25px;margin-top: 30px;padding-left: 145px}
-.derecha h1 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 40pt;padding-left: 100px}
-.derecha h2 {font-family: Poppins, Montserrat, "sans-serif"; font-size: 25pt;padding-left: 100px}
-.perfil {padding-left: 100px;padding-top: 105px;font-family: Poppins, Montserrat, "sans-serif"}
-.perfil h3 {font-size: 25pt;}
-.perfil p {margin-top: -20px;width: 800px;text-align:justify;font-size: 16pt}
-.experiencia h2 {font-size: 25pt;padding-top: 50px;margin-left:10px;padding-left:90px; margin: 0; padding-bottom: 2px; border-bottom:8px solid #BEABD0}
-.trabajos h3 {padding-left: 100px;padding-top:30px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt;}
-.trabajos ul {padding-left: 150px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt}
-.fines {padding-left: 130px;padding-top:0px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 12pt;font-style: italic }
-.casa {padding-left: 130px;padding-top:0px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 12pt;font-style: italic}
-.formacion h2 { font-size: 25pt;padding-top: 60px;margin-left:10px;padding-left:90px; margin: 0; padding-bottom: 2px; border-bottom:8px solid #BEABD0}
-.estudios h3 {padding-left: 100px;padding-top:30px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 400;font-size: 16pt;}
-.estudios p {padding-left: 100px;font-family: Poppins, Montserrat, "sans-serif";font-weight: 300;font-size: 16pt;font-style: italic }
-.cabezal h2 {margin-top: -40px}
-.cabezal {color:white}
+	margin-left: 10%;
+	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: initial;
+}
 
-footer {background-color: #000;
-	width: 2100px;
-	height: 100px;
-    color: #fff;
-    text-align:center;
-	padding: 40px;
-	margin-top: 1500px}
+.intereses li {margin-top: 4%}
 
+.idiomas {
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding-top: 16px;
+	margin-left: 10%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;}
 
+.informatica {font-family: Poppins, Montserrat, "sans-serif";
+	margin-left: 10%;
+	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: initial;}
+.informatica li {margin-top: 4%}
 
-	
+section {margin-left: 10%; padding: 4%}
+
+.contenedor {display: flex;
+background-color: #EDE3D9}
+
+.perfil {font-family: Poppins, Montserrat, "sans-serif";
+padding: 5%}
+.experiencia {font-family: Poppins, Montserrat, "sans-serif";
+padding: 2%}
+.trabajos {font-family: Poppins, Montserrat, "sans-serif";
+padding: 5%}
+.formacion {font-family: Poppins, Montserrat, "sans-serif";
+padding-top:2%}
+
+.estudios{font-family: Poppins, Montserrat, "sans-serif";
+padding: 5%}
+
+footer {
+	background-color: #805CA5;
+	width: 100%;
+	color: black;
+	text-align:center;
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding: 5%;}
