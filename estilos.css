@@ -1,84 +1,59 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;700&family=Roboto+Mono:wght@300;400&display=swap');
+@font-face {
+	font-family: "poppins" 'sans-serif';
+	src: url("fonts/Poppins-Regular.ttf");
+	font-weight: normal;
+	font-style: normal}
+
 * {
 	margin: 0;
 	box-sizing: border-box;
 }
 
-
-header {    background-color: #805CA5;
-     width: 100%; 
-    font-family: Poppins, Montserrat, "sans-serif";
-    font-weight: bold;
-    color: black;
-    display: flex;
+header {background-color: #805CA5;
+	width: 100%;
+	height: 90px;
+	display: flex;
 	align-items: center;
-	flex-flow: row;}
+	justify-content: space-between;
+	padding-left: 100px}
 
 .menu { display: flex;
-	list-style-type: none;}
- 
-
+	list-style-type: none;
+	
+}
 .menu li a {
- text-decoration: none;
- color: #fff;
- font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: Poppins, Montserrat, "sans-serif";
+	font-weight: bold;
+	padding: 10px;
 }
 
 .menu li a:hover {
- color: #ccc;
+ color:#BEABD0;}
+
+.foto {width: 224px;
+	height: 259px;}
+
+.iconos {list-style: none;
+	padding-top: 4%;
+	padding-left: 25px;
 }
 
-main {display: flex;}
+li {display: inline-block;}
 
-aside {background-color:#BEABD0;
-	width: 50%;}
+main {display: flex;
+flex-direction: column;
+background-color: #EDE3D9}
 
-.foto {display: flex;
-	width: 20%;
-	height: 25%;
-}
-
-.contacto h2 {font-family: Poppins, Montserrat, "sans-serif";
-	font-size: 1.5em;
-	margin-left: 30%;
-	margin-top: 10%;}
-
-.botones-izquierda{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-.svg {
-	list-style: none;
-	padding-top: 5%;
-}
-
-.botonera {
-	display: flex;
-	list-style: none;
-	flex-wrap: wrap;
-}
-
-.botonera li {
-	padding :0.7%;
-	/*margin-left: 40%;*/
-}
-
-.botonera a {
-	text-decoration: none;
-	display: flex;  
-	justify-content:space-around;
-	align-items:center;
-	background-color: #805CA5;
-	color:black;
-	font-family:Poppins, Montserrat, "sans-serif";
-	border-radius:4px;
-	width:10em;
-	height:2em
-}
+aside {;width: 50%;
+		margin-left: 80px;
+		margin-top: 60px;
+		background-color: #BEABD0;}
 
 .intereses {
 	font-family: Poppins, Montserrat, "sans-serif";
@@ -109,7 +84,7 @@ aside {background-color:#BEABD0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: initial;}
-.informatica li {margin-top: 4%}
+.informatica li {margin-top: 4%;}
 
 section {margin-left: 10%; padding: 4%}
 
@@ -117,21 +92,115 @@ section {margin-left: 10%; padding: 4%}
 background-color: #EDE3D9}
 
 .perfil {font-family: Poppins, Montserrat, "sans-serif";
-padding: 5%}
+padding: 2%}
 .experiencia {font-family: Poppins, Montserrat, "sans-serif";
 padding: 2%}
 .trabajos {font-family: Poppins, Montserrat, "sans-serif";
 padding: 5%}
 .formacion {font-family: Poppins, Montserrat, "sans-serif";
-padding-top:2%}
+padding:2%}
 
 .estudios{font-family: Poppins, Montserrat, "sans-serif";
 padding: 5%}
 
+h1 {color: #805CA5;
+	margin-left: 25px;
+	margin-top: 60px;
+	font-family: Poppins, Montserrat, "sans-serif"}
+
+.galería {
+	display: flex;
+	flex-wrap: wrap;
+}
+.galería img {
+	width: 360px;
+	height: 250px;
+	object-fit: cover;
+	padding: 10px;
+	margin-left: 7%
+}
+
+.imagen {
+	position: relative;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.imagen img {
+	width: 100%;
+	transition: transform 0.5s ease;
+}
+
+.imagen:hover img {
+	transform: scale(1.1);
+}
+
+.epigrafe {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(156,125,160,0.57);
+	color: black;
+	font-family: Poppins, Montserrat, "sans-serif";
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	margin-left: 5%;
+}
+
+.imagen:hover .epigrafe {
+	opacity: 1;
+}
+.contenedor-form {
+    width: 500px;
+    padding: 16px;
+    background-color: #BEABD0;
+    margin: 0 auto;
+    margin-top: 100px;
+	margin-bottom: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+	font-family: Poppins, Montserrat, "sans-serif";
+}
+
+.contenedor-form h2 {
+    text-align: center;
+    color: #805CA5;
+}
+
+.contenedor-form label {
+    color: #805CA5;
+	margin: 2px;
+}
+
+.contenedor-form input[type=text], .contenedor-form input[type=email], .contenedor-form textarea {
+    width: 100%;
+    padding: 12px;
+	margin: 2px;
+    border: 2px solid #805CA5;
+    border-radius: 4px;
+    box-sizing: border-box;}
+
+.contenedor-form enviar {
+	color: #BEABD0;
+	margin: 10px;
+}
+@media (min-width: 768px) {
+	.gallery img {
+	width: 49%;}
+}
+
+@media (min-width: 1024px) {
+	.gallery img {
+	width: 32%;}
+}
+
+
 footer {
 	background-color: #805CA5;
 	width: 100%;
+	height: 60px;
+	padding: 25px;
 	color: black;
 	text-align:center;
-	font-family: Poppins, Montserrat, "sans-serif";
-	padding: 5%;}
+	font-family: Poppins, Montserrat, "sans-serif";}
