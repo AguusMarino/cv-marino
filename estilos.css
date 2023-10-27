@@ -18,11 +18,38 @@ header {background-color: #805CA5;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 100px}
+	padding-left: 100px;
+	padding-right: 100px}
 
+.logo {
+	animation: logo .9s linear both;
+}
+
+@keyframes logo {
+  0% {
+	transform: scale3d(1,1,1);
+}
+  30% {
+	transform: scale3d(1.25,.75,1);
+}
+  40% {
+	transform: scale3d(.75,1.25,1);
+}
+  50% {
+	transform: scale3d(1.15,.85,1);
+}
+  65% {
+	transform: scale3d(.95,1.05,1);
+}
+  75% {
+	transform: scale3d(1.05,.95,1);
+}
+  100% {
+	transform: scale3d(1,1,1);
+}
+}
 .menu { display: flex;
-	list-style-type: none;
-	
+	list-style-type: none;	
 }
 .menu li a {
 	text-decoration: none;
@@ -30,7 +57,7 @@ header {background-color: #805CA5;
 	font-size: 16px;
 	font-family: Poppins, Montserrat, "sans-serif";
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px;;
 }
 
 .menu li a:hover {
@@ -49,6 +76,8 @@ li {display: inline-block;}
 main {display: flex;
 flex-direction: column;
 background-color: #EDE3D9}
+
+.main-form {background-image:url("img/fondo-estrellas.png")}
 
 aside {;width: 50%;
 		margin-left: 80px;
@@ -84,40 +113,88 @@ aside {;width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: initial;}
+
 .informatica li {margin-top: 4%;}
 
 section {margin-left: 10%; padding: 4%}
 
 .contenedor {display: flex;
-background-color: #EDE3D9}
+			position: relative;
+			background-color: #EDE3D9}
 
-.perfil {font-family: Poppins, Montserrat, "sans-serif";
-padding: 2%}
-.experiencia {font-family: Poppins, Montserrat, "sans-serif";
-padding: 2%}
-.trabajos {font-family: Poppins, Montserrat, "sans-serif";
-padding: 5%}
-.formacion {font-family: Poppins, Montserrat, "sans-serif";
-padding:2%}
+.estrella-g {position: absolute;
+			top: 60%;
+			right: 1%;
+			width: 30%;
+			height: auto;
+}
 
-.estudios{font-family: Poppins, Montserrat, "sans-serif";
-padding: 5%}
+.estrella-g {
+	animation: blur 4.9s linear infinite both;
+}
 
-h1 {color: #805CA5;
-	margin-left: 25px;
-	margin-top: 60px;
-	font-family: Poppins, Montserrat, "sans-serif"}
+@keyframes blur {
+0% {
+	filter: blur(.01px);
+}
+100% {
+	filter: blur(12px);
+	opacity: 0;
+}
+}
+.perfil {
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding: 2%}
+
+.experiencia {
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding: 2%}
+
+.trabajos {
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding: 5%}
+
+.formacion {
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding:2%}
+
+.estudios{
+	font-family: Poppins, Montserrat, "sans-serif";
+	padding: 5%}
+
+h1 {
+  color: #805CA5;
+  margin-left: 30px;
+  margin-top: 60px;
+  font-family: Poppins, Montserrat, "sans-serif";
+  animation: mover 2.5s linear both;
+}
+@keyframes mover {
+  0% {
+	letter-spacing: .6em;
+	opacity: 0;
+}
+  40% {
+	opacity: .6;
+}
+  100% {
+	letter-spacing: normal;
+	opacity: 1;
+}
+}
 
 .galería {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: center;
+
 }
 .galería img {
 	width: 360px;
 	height: 250px;
 	object-fit: cover;
 	padding: 10px;
-	margin-left: 7%
 }
 
 .imagen {
@@ -142,44 +219,67 @@ h1 {color: #805CA5;
 	background-color: rgba(156,125,160,0.57);
 	color: black;
 	font-family: Poppins, Montserrat, "sans-serif";
+	font-size: 15px;
 	text-align: center;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-	margin-left: 5%;
 }
 
 .imagen:hover .epigrafe {
 	opacity: 1;
 }
 .contenedor-form {
-    width: 500px;
-    padding: 16px;
-    background-color: #BEABD0;
-    margin: 0 auto;
-    margin-top: 100px;
+	width: 500px;
+	padding: 16px;
+	background-color: #BEABD0;
+	margin: 0 auto;
+	margin-top: 100px;
 	margin-bottom: 100px;
-    border: 1px solid black;
-    border-radius: 4px;
+	border: 1px solid black;
+	border-radius: 4px;
 	font-family: Poppins, Montserrat, "sans-serif";
 }
 
 .contenedor-form h2 {
-    text-align: center;
-    color: #805CA5;
+	text-align: center;
+	color: #805CA5;
+	animation: sacudir 2s 
 }
 
+@keyframes sacudir {
+  0%, 100% {
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+}
+  10% {
+	transform: rotate(8deg);
+}
+  20%, 40%, 60% {
+	transform: rotate(-10deg);
+}
+  30%, 50%, 70% {
+	transform: rotate(10deg);
+}
+  80% {
+	transform: rotate(-8deg);
+}
+  90% {
+	transform: rotate(8deg);
+}
+}
+	
 .contenedor-form label {
-    color: #805CA5;
+	color: #805CA5;
 	margin: 2px;
 }
 
 .contenedor-form input[type=text], .contenedor-form input[type=email], .contenedor-form textarea {
-    width: 100%;
-    padding: 12px;
+	width: 100%;
+	padding: 12px;
 	margin: 2px;
-    border: 2px solid #805CA5;
-    border-radius: 4px;
-    box-sizing: border-box;}
+	border: 2px solid #805CA5;
+	border-radius: 4px;
+	box-sizing: border-box;}
 
 .contenedor-form enviar {
 	color: #BEABD0;
